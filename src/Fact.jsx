@@ -19,7 +19,7 @@ function useRandomFact(factKey) {
           throw new Error("Failed to fetch fact");
         }
         const result = await response.json();
-        console.log(result.fact);
+        // console.log(result.fact);
         setData(result);
       } catch (err) {
         // Set the error state with a custom error message
